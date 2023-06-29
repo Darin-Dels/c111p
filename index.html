@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <title>Image Recognition</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1>Face Recognition Web App</h1>
+        <p>This Model Is Trained To Recognise :</p>
+        <b class="list_of_people">
+            Mother
+            <hr>
+            Brother
+            <hr>
+            Little Brother
+            <hr>
+        </b>
+        <label>Webcam</label>
+        <div id="camera"></div>
+        <div id="captured_image"></div>
+        <button id="take_photo" onclick="capture_img();" class="btn btn-success">Take Photo</button>
+        <button id="identify_photo" onclick="identify_img();" class="btn btn-danger">Identify Photo</button>
+        <b><p style="font-size: 20px;">Family Member : </p></b><i><span id="family_member"></span></i>
+        <i><p style="font-size: 20px;">Accuracy : </p></i><b><span id="accuracy"></span></b>
+        <script src="main.js"></script>
+    </body>
+</html>

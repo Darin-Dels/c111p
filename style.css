@@ -1,0 +1,27 @@
+body
+{
+   text-align: center;
+   background-color: cornflowerblue;
+}
+
+h1
+{
+    font-size: 50px;
+    color: gold;
+}
+
+p
+{
+    color: firebrick;
+    font-size: 20px;
+}
+
+#webcam
+{
+    border-color: red;
+    border-radius: 20px;
+    border-style: dashed;
+    border-width: 5px;
+    width: 350px;
+    height: 300px;
+}
